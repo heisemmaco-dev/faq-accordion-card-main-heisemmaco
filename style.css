@@ -117,7 +117,7 @@ button:hover {
 
 .fir_ac p {
   margin-bottom: 10px;
-  font-size: 95%;
+  font-size: 11px;
 }
 
 #the_p {
@@ -261,6 +261,10 @@ picture {
   bottom: 18px;
   width: 400px;
   height: 452px;
+}
+
+.fir_ac p {
+  font-size: 15px;
 }
 
 .illust {
