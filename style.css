@@ -1,0 +1,303 @@
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  width: 86%;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+ 
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+  }
+  
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+
+  button {
+    font: inherit;
+  }
+ 
+  p, h1 {
+    overflow-wrap: break-word;
+  }
+
+
+main {
+  padding: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 250px;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 30px;
+    height: 434px;
+}
+
+section {
+  font-size: 13px;
+  position: relative;
+  top: -41px;
+}
+
+picture {
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 13px;
+}
+
+picture img:first-child {
+  position: absolute;
+  top: -121px;
+  left: 2px;
+  width: 270px;
+}
+
+.the_wom{
+  width: 270px;
+  position:inherit;
+  top: -20px
+}
+
+.the_de {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.fir_ac {
+  border-top: 1px solid rgb(206, 204, 204);
+  transition: all 0.2s ease;
+}
+
+.fir_ac p {
+  margin-bottom: 10px;
+  font-size: 95%;
+}
+
+#the_p {
+  display: none;
+}
+
+
+.fir_ac:first-child {
+  border: none;
+}
+
+.open #the_p {
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.open #bold-el p {
+  font-weight: 700;
+}
+
+.open .icon {
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
+}
+
+@media screen and (min-width:400Px) {
+  .container {
+    background-color: white;
+    width: 300px;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 30px;
+    height: 400px;
+  }
+
+  section {
+    font-size: 13px;
+    position: relative;
+    top: 0px;
+  }
+
+  .wrap {
+    position: relative;
+    top: -19px;
+  }
+
+  picture img:first-child {
+    position: absolute;
+    top: -145px;
+    left: 4px;
+    width: 270px;
+}
+
+  section {
+    font-size: 11px;
+    position: relative;
+    top: -37px;
+  }
+}
+
+@media screen and (min-width:700Px) {
+  .container {
+    display: grid;
+    grid-template-columns: 290px 290px;
+    background-color: white;
+    width: 618px;
+    align-items: center;
+    justify-content: space-around;
+    height: 420px;
+}
+
+main {
+  position: relative;
+}
+
+picture .the_woman {
+ display: none;
+}
+
+picture {
+  position: relative;
+  left: -22px;
+  bottom: 18px;
+  overflow: hidden;
+  width: 318px;
+  height: 452px;
+}
+
+.illust {
+  position: absolute;
+  bottom: 125px;
+  left: -50px;
+  z-index: 1;
+  width: 345px;
+}
+
+.box {
+  position: absolute;
+  bottom: 33%;
+  left: -44px;
+  z-index: 3;
+  width: 96px;
+}
+
+picture .pattern {
+  max-width: 200%;
+
+  width: 725px;
+  position: relative;
+  left: -209px;
+  bottom: 152px;
+}
+
+.the_de {
+  display: block;
+}
+
+section {
+  position: relative;
+  bottom: 34px;
+}
+
+}
+
+@media screen and (min-width: 950px) {
+  .container {
+    width: 775px;
+    height: 450px;
+}
+
+main {
+  position: relative;
+}
+
+picture .the_woman {
+ display: none;
+}
+
+picture {
+  left: -60px;
+  bottom: 18px;
+  width: 400px;
+  height: 452px;
+}
+
+.illust {
+  bottom: 97px;
+  left: -68px;
+  width: 442px;
+}
+
+/* .container {
+  overflow: hidden;
+} */
+
+.box {
+  left: -69px;
+  width: 127px;
+}
+
+picture .pattern {
+  width: 725px;
+  position: relative;
+  left: -230px;
+  bottom: 195px;
+}
+
+section {
+  font-size: 17px;
+  position: relative;
+  top: -37px;
+}
+
+.the_de {
+  display: block;
+}
+
+section {
+  position: relative;
+  bottom: 34px;
+}
+
+}
