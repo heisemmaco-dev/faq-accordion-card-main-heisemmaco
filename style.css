@@ -14,7 +14,6 @@
   * {
     margin: 0;
     padding: 0;
-    border: 1px solid rebeccapurple;
   }
  
  
@@ -25,9 +24,12 @@
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    place-content: center;
+    
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
 
@@ -48,7 +50,6 @@
 
 main {
   padding: 4px;
-  border: solid;
   max-width: fit-content;
 }
 
@@ -58,7 +59,7 @@ main {
     border-radius: 16px;
     padding: 20px;
     margin-top: 98px;
-    height: 434px;
+    height: 422px;
 }
 
 section {
