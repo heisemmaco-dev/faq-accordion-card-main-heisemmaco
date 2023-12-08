@@ -1,4 +1,6 @@
-.attribution { 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Kumbh+Sans:wght@400;700&display=swap');
+
+footer { 
   font-size: 11px; 
   text-align: center; 
   width: 86%;
@@ -24,6 +26,10 @@
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     background-repeat: no-repeat;
     background-size: cover;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    Font-size: 12px;
+    font-weight: 400;
     
     min-height: 100vh;
     display: flex;
@@ -68,7 +74,7 @@ section {
   top: -41px;
 }
 
-picture {
+.image_container {
      position: relative;
      display: flex;
      flex-direction: column;
@@ -76,12 +82,14 @@ picture {
      margin-bottom: 13px;
 }
 
-picture img:first-child {
+.image_container img:first-child {
   position: absolute;
   top: -121px;
   left: 2px;
   width: 270px;
 }
+
+
 
 .the_wom{
   width: 270px;
@@ -101,12 +109,17 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   align-items: center;
   border: none;
-  background-color: white;
+  background-color: transparent;
   margin-top: 10px;
   margin-bottom: 5px;
+  text-align: start;
+  font-size: 12px;
 }
+
+
 
 button:hover {
   color: hsl(14, 88%, 65%);
@@ -122,7 +135,7 @@ button:hover {
   font-size: 11px;
 }
 
-#the_p {
+.the_p {
   display: none;
 }
 
@@ -131,18 +144,23 @@ button:hover {
   border: none;
 }
 
-.open #the_p {
+.open .the_p {
   display: block;
   transition: all 0.2s ease;
 }
 
-.open #bold-el p {
+.open .bold-el span {
   font-weight: 700;
+}
+
+.icon {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in;
 }
 
 .open .icon {
   transform: rotate(180deg);
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-out;
 }
 
 @media screen and (min-width:400Px) {
@@ -166,7 +184,7 @@ button:hover {
     top: -19px;
   }
 
-  picture img:first-child {
+  .image_container img:first-child {
     position: absolute;
     top: -145px;
     left: 4px;
@@ -176,7 +194,7 @@ button:hover {
   section {
     font-size: 11px;
     position: relative;
-    top: -37px;
+    top: -31px;
   }
 }
 
@@ -188,7 +206,7 @@ button:hover {
     width: 618px;
     align-items: center;
     justify-content: space-around;
-    height: 420px;
+    height: 355px;
     margin-top: 0;
 }
 
@@ -196,11 +214,11 @@ main {
   position: relative;
 }
 
-picture .the_woman {
+.image_container .the_woman {
  display: none;
 }
 
-picture {
+.image_container {
   position: relative;
   left: -22px;
   bottom: 18px;
@@ -225,7 +243,7 @@ picture {
   width: 96px;
 }
 
-picture .pattern {
+.image_container .pattern {
   max-width: 200%;
 
   width: 725px;
@@ -240,12 +258,27 @@ picture .pattern {
 
 section {
   position: relative;
-  bottom: 34px;
+  top: -65px;
 }
 
+button {
+  font-size: 15px;
+}
+
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 }
 
 @media screen and (min-width: 950px) {
+
+  .wrap {
+    gap: 10px;
+  }
+
   .container {
     width: 775px;
     height: 450px;
@@ -255,11 +288,11 @@ main {
   position: relative;
 }
 
-picture .the_woman {
+.image_container .the_woman {
  display: none;
 }
 
-picture {
+.image_container {
   left: -60px;
   bottom: 18px;
   width: 400px;
@@ -285,7 +318,7 @@ picture {
   width: 127px;
 }
 
-picture .pattern {
+.image_container .pattern {
   width: 725px;
   position: relative;
   left: -230px;
