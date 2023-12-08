@@ -14,11 +14,10 @@
   * {
     margin: 0;
     padding: 0;
+    border: 1px solid rebeccapurple;
   }
  
-  html, body {
-    height: 100%;
-  }
+ 
   
   body {
     line-height: 1.5;
@@ -48,7 +47,9 @@
 
 
 main {
-  padding: 20px;
+  padding: 4px;
+  border: solid;
+  max-width: fit-content;
 }
 
 .container {
@@ -56,12 +57,12 @@ main {
     width: 250px;
     border-radius: 16px;
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 98px;
     height: 434px;
 }
 
 section {
-  font-size: 13px;
+  font-size: 11px;
   position: relative;
   top: -41px;
 }
@@ -187,6 +188,7 @@ button:hover {
     align-items: center;
     justify-content: space-around;
     height: 420px;
+    margin-top: 0;
 }
 
 main {
